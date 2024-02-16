@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="product1" class="hw_spring.classPathXml.Product" init-method="init">
+        <property name="name" value="Bread"/>
+        <property name="price" value="50"/>
+    </bean>
+
+    <bean id="product2" class="hw_spring.classPathXml.Product">
+        <property name="name" value="Milk"/>
+        <property name="price" value="40"/>
+    </bean>
+    <bean class="hw_spring.classPathXml.BuyLogPostProcessor"/>
+
+</beans>
